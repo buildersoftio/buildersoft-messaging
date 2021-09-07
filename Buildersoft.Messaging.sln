@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31606.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buildersoft.Messaging", "src\Buildersoft.Messaging\Buildersoft.Messaging.csproj", "{CF4B3FF7-FDFC-43A8-8065-D3CB3DE2CF2A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF4B3FF7-FDFC-43A8-8065-D3CB3DE2CF2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF4B3FF7-FDFC-43A8-8065-D3CB3DE2CF2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF4B3FF7-FDFC-43A8-8065-D3CB3DE2CF2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF4B3FF7-FDFC-43A8-8065-D3CB3DE2CF2A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FDC80544-A249-4D35-813F-0FEF2C9730D5}
+	EndGlobalSection
+EndGlobal
