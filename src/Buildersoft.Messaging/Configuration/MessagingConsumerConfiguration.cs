@@ -63,7 +63,6 @@ namespace Buildersoft.Messaging.Configuration
         /// Configure Initial Position of the coursor, defaukt us Earliest
         /// </summary>
         public SubscriptionInitialPositions SubscriptionInitialPosition { get; set; }
-        public bool ShowEnvironmentInTopic { get; set; }
 
         public MessagingConsumerConfiguration()
         {
@@ -78,7 +77,6 @@ namespace Buildersoft.Messaging.Configuration
             MessagePrefetchCount = 1000;
             ShouldResendUnacknowledgedMessages = true;
             SubscriptionInitialPosition = SubscriptionInitialPositions.Earliest;
-            ShowEnvironmentInTopic = true;
         }
 
         /// <summary>
@@ -89,9 +87,7 @@ namespace Buildersoft.Messaging.Configuration
         {
             if (Topic != "")
             {
-                if (ShowEnvironmentInTopic != true)
-                    return $"{MessageProtocol.GetStringContent()}://{Tenant}/{Namespace}/{Topic}";
-                return $"{MessageProtocol.GetStringContent()}://{Tenant}/{Namespace}/{environment}-{Topic}";
+                return $"{MessageProtocol.GetStringContent()}://{Tenant}/{Namespace}/{Topic}";
             }
             else
                 throw new ArgumentNullException("Topic should not be null or empty");

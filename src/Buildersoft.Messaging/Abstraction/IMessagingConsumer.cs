@@ -1,4 +1,4 @@
-﻿using Andy.X.Client.Events.Consumers;
+﻿using Buildersoft.Messaging.Domain.Message;
 using System.Threading;
 
 namespace Buildersoft.Messaging.Abstraction
