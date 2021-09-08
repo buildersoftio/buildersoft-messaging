@@ -83,7 +83,7 @@ namespace Buildersoft.Messaging.Configuration
         /// Build Topic will generate a string of protocol://tenant/namespace/topic
         /// </summary>
         /// <returns></returns>
-        public string BuildTopic(string environment)
+        public string BuildTopic()
         {
             if (Topic != "")
             {

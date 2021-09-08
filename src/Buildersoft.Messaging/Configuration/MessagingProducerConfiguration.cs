@@ -26,18 +26,13 @@ namespace Buildersoft.Messaging.Configuration
             IsAllowedToStoreInMemoryIfConnectionFailes = false;
         }
 
-        public string BuildTopic(string environment)
+        public string BuildTopic()
         {
-            if (Topic != "")
-            {
-                if (ShowEnvironmentInTopic != true)
-                    return $"{MessageProtocol.GetStringContent()}://{Tenant}/{Namespace}/{Topic}";
+            if (ShowEnvironmentInTopic != true)
+                return $"{MessageProtocol.GetStringContent()}://{Tenant}/{Namespace}/{Topic}";
 
-                return $"{MessageProtocol.GetStringContent()}://{Tenant}/{Namespace}/{environment}-{Topic}";
-            }
             else
                 throw new ArgumentNullException("Topic should not be null or empty");
         }
     }
-
 }
