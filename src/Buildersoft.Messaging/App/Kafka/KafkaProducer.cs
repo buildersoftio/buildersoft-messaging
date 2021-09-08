@@ -1,4 +1,5 @@
-﻿using Buildersoft.Messaging.Abstraction;
+﻿using Andy.X.Client.Extensions;
+using Buildersoft.Messaging.Abstraction;
 using Buildersoft.Messaging.Configuration;
 using Confluent.Kafka;
 using System;
