@@ -4,4 +4,11 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Buildersoft.Andy.X.Client" Version="2.0.2-preview" />
+    <PackageReference Include="Confluent.Kafka" Version="1.7.0" />
+    <PackageReference Include="DotPulsar" Version="1.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="5.0.0" />
+  </ItemGroup>
+
 </Project>
