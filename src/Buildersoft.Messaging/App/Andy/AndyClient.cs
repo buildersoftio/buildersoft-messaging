@@ -16,7 +16,7 @@ namespace Buildersoft.Messaging.App.Andy
             throw new System.NotImplementedException();
         }
 
-        public IMessagingClient GetClient()
+        public object GetClient()
         {
             throw new System.NotImplementedException();
         }

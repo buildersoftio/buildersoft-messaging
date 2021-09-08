@@ -9,15 +9,13 @@ namespace Buildersoft.Messaging.Domain.Message
         public DateTime ReceivedDate { get; private set; }
         public DateTime SentDate { get; private set; }
 
-        public Object MessageObjectFromBroker { get; private set; }
 
-        public MessageReceivedArgs(T topicRecordData, string recordRaw, DateTime receivedDate, DateTime sentDate, Object messageObjectFromBroker)
+        public MessageReceivedArgs(T topicRecordData, string recordRaw, DateTime receivedDate, DateTime sentDate)
         {
             TopicRecordData = topicRecordData;
             RecordRaw = recordRaw;
             ReceivedDate = receivedDate;
             SentDate = sentDate;
-            MessageObjectFromBroker = messageObjectFromBroker;
         }
     }
 }
