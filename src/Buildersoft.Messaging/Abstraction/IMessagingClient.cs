@@ -6,7 +6,7 @@ namespace Buildersoft.Messaging.Abstraction
 {
     public interface IMessagingClient
     {
-        Object GetClient();
+        IMessagingClient GetClient();
         IMessagingClient Build();
         MessagingClientBuilder GetBuilder();
         ILoggerFactory GetLoggerFactory();
